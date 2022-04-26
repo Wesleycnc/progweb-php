@@ -20,6 +20,8 @@
  
 
  ?>   
+        
+ <p> hoje é <?=$data?>. <?=$nome?>   </p>
      
  </body>
  </html>
