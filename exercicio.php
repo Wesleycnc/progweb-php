@@ -16,7 +16,7 @@
  $idade = 18;
  $cidade = "São Paulo";
 
- echo "<p> Hoje é $data. tem $idade anos e nasceu em $cidade </p>"; 
+ echo "<p> Hoje é $data. $nome tem $idade anos e nasceu em $cidade </p>"; 
  
 
  ?>   
