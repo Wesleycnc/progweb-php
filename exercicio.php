@@ -21,7 +21,7 @@
 
  ?>   
         
- <p> hoje é <?=$data?>. <?=$nome?>   </p>
+ <p> hoje é <?=$data?>. <?=$nome?> </p>
      
  </body>
  </html>
