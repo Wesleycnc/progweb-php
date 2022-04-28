@@ -9,24 +9,33 @@
 <body>
     <h1>Exercicio</h1>
     <hr>
-<?php
+    <?php
 
-$salario = 2000;
-/* $salario2 = 1000; */
-$aumento = ($salario);
+$salario = 500; // Entrada de qualquer valor
 
+// Declarar esta váriavel inicialmente é algo opcional
+$novoSalario = 0;
 
-if ($salario < 500) {
-    echo $aumento * 1.15;
-} elseif( ($salario <1000) ){
-    echo $aumento * 1.10;
+if($salario < 500){
+    $novoSalario = $salario *1.5;
+} elseif ($salario <= 5000) {
+    $novoSalario = $salario *1.10;
+} else {$novoSalario = $salario *1.05;}
 
-} else{
-    echo $aumento * 1.05;    
-}
+echo "Salário antigo $salario e Salário novo $novoSalario";
+?>
 
+<!-- 
+number_format (
+    valor,
+    quantidade de casas decimais,
+    "separador de casa decimais"
+    "separador de milhar"
+)
+-->
 
-
-?>   
+<!-- Recomendado utilizar o HTML para facilitar o Back-End -->
+<p>R$ <?=number_format($salario,2,",",".")?> e 
+<?=number_format($novoSalario,2,",",".")?></p>
 </body>
 </html>
