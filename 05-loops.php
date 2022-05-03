@@ -64,22 +64,24 @@ for( $i = 1; $i <=3; $i++ ){
 
 $meses = array ("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "agosto", "Setembro", "Outubro", 
 "Novembro", "Dezembro");
-$i = 0;
 
-
-
-
+ 
 ?>
 
-    <div>
-        <ul>
-            <li></li>
-        </ul>
-    </div>
+    <ol>
+        <?php for($i = 0; $i <count($meses); $i++){ ?>
+   
+            <li><?=$meses[$i]?></li>
 
 
+        
+
+        <?php
 }
-    
+?>
+
+ </ol>
+ 
     
 </body>
 </html>
