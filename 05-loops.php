@@ -81,6 +81,34 @@ $meses = array ("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Jul
 ?>
 
  </ol>
+
+    <h2>foreach (para cada)</h2>
+    <p>Loop exclusivo para Arrays</p>
+
+    <ol>
+        <!-- Palavra-chave 'as' :como -->
+        <?php foreach($meses as $mes){?>
+        <li> <?=$mes?></li>
+        <?php } ?>
+    </ol>
+
+    <?php
+
+    //Array Associativo (formados por pares de chaves=>valor)
+     $curso = [
+         // chave (key) => valor (value)
+        "nome" => "Progrmador Web",
+        "Carga_horaria" => 240,
+        "unidade" => "Penha",
+        "ucs" => 5
+    ];
+
+    foreach($curso as $dados => $valores){
+?>
+    <p> <?=$dados?> = <?=$valores?>  </p>
+<?php
+}
+?>
  
     
 </body>
